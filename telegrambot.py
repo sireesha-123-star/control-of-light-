@@ -4,7 +4,7 @@ import os
 
 ADAFRUIT_IO_USERNAME = os.getenv('Sireesha_123')
 ADAFRUIT_IO_KEY = os.getenv('aio_OmnI11Ua7yad5mHqonaxCUoG45qN')
-TOKEN = os.getenv('1399937407:AAHNUzeL8RGKXYe2NabUEB7Ah1fDhhqt7J0')
+TOKEN = os.getenv('1367693111:AAGKLDvXZi39J0DwPhWXeA3Pnf9nJLM1ZI4')
 aio = Client(ADAFRUIT_IO_USERNAME,ADAFRUIT_IO_KEY)
 !pip install python-telegram-bot
   
@@ -43,7 +43,7 @@ def start(update,context):
   context.bot.send_message(chat_id=update.effective_chat.id, text=start_message)
 
 
-updater =Updater('1399937407:AAHNUzeL8RGKXYe2NabUEB7Ah1fDhhqt7J0')
+updater =Updater('1367693111:AAGKLDvXZi39J0DwPhWXeA3Pnf9nJLM1ZI4')
 dispatcher = updater.dispatcher
 dispatcher.add_handler(CommandHandler('off',off))
 dispatcher.add_handler(CommandHandler('on',on))
